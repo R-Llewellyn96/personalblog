@@ -5,7 +5,7 @@ import {SiGatsby} from "@react-icons/all-files/si/SiGatsby";
 import {SiMaterialUi} from "@react-icons/all-files/si/SiMaterialUi";
 import {SiPostgresql} from "@react-icons/all-files/si/SiPostgresql";
 import React from "react";
-import Repos from "../repos/Repos";
+import Repos from "../Repos/Repos";
 import theme from "../theme";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faJava} from "@fortawesome/free-brands-svg-icons/faJava";

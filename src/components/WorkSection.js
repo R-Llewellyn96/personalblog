@@ -115,7 +115,7 @@ const WorkSection = () => {
                             >
                                 What I do<br/>9 to 5.
                             </Typography>
-                            <Typography variant="body1" align="left" sx={{...typoText}} paragraph>
+                            <Typography component={'div'} variant="body1" align="left" sx={{...typoText}} paragraph>
                                 Data Analytics Department
                                 <ul className="list" style={{ marginLeft:'1rem', listStyle: 'disc outside'}}>
                                     <li>Creation of Backend-Services and REST APIs using Spring Boot with Java and Flask with Python.</li>

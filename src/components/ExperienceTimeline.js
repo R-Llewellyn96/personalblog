@@ -30,7 +30,7 @@ export default function ExperienceTimeline() {
                 <TimelineSeparator>
                     <TimelineConnector />
                     <TimelineDot>
-                        <FontAwesomeIcon icon={faCode} size="md"/>
+                        <FontAwesomeIcon icon={faCode} />
                     </TimelineDot>
                     <TimelineConnector />
                 </TimelineSeparator>
@@ -57,7 +57,7 @@ export default function ExperienceTimeline() {
                     <TimelineConnector />
                     <TimelineDot color="secondary" variant="outlined">
                         {/*<LaptopMacIcon />*/}
-                        <FontAwesomeIcon icon={faLaptopCode} size="md"/>
+                        <FontAwesomeIcon icon={faLaptopCode} />
                     </TimelineDot>
                     <TimelineConnector />
                 </TimelineSeparator>
@@ -83,7 +83,7 @@ export default function ExperienceTimeline() {
                 <TimelineSeparator>
                     <TimelineConnector />
                     <TimelineDot color="secondary">
-                        <FontAwesomeIcon icon={faGraduationCap} size="md"/>
+                        <FontAwesomeIcon icon={faGraduationCap} />
                     </TimelineDot>
                     <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
                 </TimelineSeparator>
@@ -109,7 +109,7 @@ export default function ExperienceTimeline() {
                 <TimelineSeparator>
                     <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
                     <TimelineDot  color="secondary" variant="outlined">
-                        <FontAwesomeIcon icon={faGraduationCap} size="md"/>
+                        <FontAwesomeIcon icon={faGraduationCap} />
                     </TimelineDot>
                     <TimelineConnector />
                 </TimelineSeparator>

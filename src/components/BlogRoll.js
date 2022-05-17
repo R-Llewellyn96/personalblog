@@ -77,8 +77,7 @@ class BlogRollTemplate extends React.Component {
                             By Ryan Llewellyn - {post.frontmatter.date}
                           </Typography>
 
-                          <Link to={post.fields.slug}>
-                            <IconButton aria-label="card-link" sx={{
+                            <IconButton aria-label="card-link" component={Link} to={post.fields.slug} sx={{
                               color: '#073042',
                               "&:hover": {
                                 color: theme.palette.primary.main,
@@ -87,7 +86,6 @@ class BlogRollTemplate extends React.Component {
                             }}>
                               <FontAwesomeIcon icon={faArrowRightLong} size="lg" />
                             </IconButton>
-                          </Link>
 
                         </CardActions>
                       </CardActionArea>

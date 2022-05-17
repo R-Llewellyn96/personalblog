@@ -23,11 +23,12 @@ import {
 } from "../styling/myCustomStylingComponents"
 import "./styles.css";
 import {faEarthEurope} from "@fortawesome/free-solid-svg-icons/faEarthEurope";
+import user_img from "../img/user_image.jpg"
 
 const defaultUser = {
     name: "Ryan Llewellyn",
     company: "IQBlade Ltd",
-    avatar_url: "https://avatars.githubusercontent.com/u/36107368?v=4",
+    avatar_url: {user_img},
     location: "Liverpool, United Kingdom",
     bio: "Data Analyst based in Liverpool, UK.Specialising in Java development with Spring and Data Analytics in Python, with some interest in React on the front-end.",
     blog: "https://www.rllewellyn96.dev",
@@ -60,7 +61,6 @@ export default function UserInfoCard() {
     const {
         name,
         company,
-        avatar_url,
         location,
         bio,
         blog,
@@ -122,7 +122,7 @@ export default function UserInfoCard() {
                     >
                         <Avatar
                             alt={login + "'s avatar"}
-                            src={avatar_url}
+                            src={user_img}
                             sx={{...avatarStyle}}
                         />
                     </StyledBadge>

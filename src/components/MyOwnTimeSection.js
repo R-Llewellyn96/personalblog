@@ -100,6 +100,7 @@ const MyOwnTimeSection = () => {
 
     const repos = [
         {
+            id: 'uniqueId1',
             html_url: "https://github.com/R-Llewellyn96/gatsby-personalsite",
             full_name: "R-Llewellyn96/gatsby-personalsite",
             description: "Personal Website built using React, Material UI and Gatsby JS",
@@ -109,6 +110,7 @@ const MyOwnTimeSection = () => {
             forks_count: 0
         },
         {
+            id: 'uniqueId2',
             html_url: "https://github.com/R-Llewellyn96/Python-LCCSpending",
             full_name: "R-Llewellyn96/Python-LCCSpending",
             description: "Liverpool City Council Spending challenge.",
@@ -118,6 +120,7 @@ const MyOwnTimeSection = () => {
             forks_count: 0
         },
         {
+            id: 'uniqueId3',
             html_url: "https://github.com/R-Llewellyn96/Java-TwitterAnalyser",
             full_name: "R-Llewellyn96/Java-TwitterAnalyser",
             description: "Targeted Tweet Analyser which uses Stanford's Natural Language Processing Library to perform sentiment analysis and a targeted keyword search for different topics.",
@@ -127,6 +130,7 @@ const MyOwnTimeSection = () => {
             forks_count: 0
         },
         {
+            id: 'uniqueId4',
             html_url: "https://github.com/R-Llewellyn96/Java-AESEncryption",
             full_name: "R-Llewellyn96/Java-AESEncryption",
             description: "Implementation of AES Encryption / Decryption using the Java Cryptography Extension and JavaFX.",
@@ -136,6 +140,7 @@ const MyOwnTimeSection = () => {
             forks_count: 0
         },
         {
+            id: 'uniqueId5',
             html_url: "https://github.com/R-Llewellyn96/Java-arrayRegex",
             full_name: "R-Llewellyn96/Java-arrayRegex",
             description: "Java Microservice which performs a match and replace regex using parallel streams on a string array passed as an argument to the program, returns a modified string array.",
@@ -169,7 +174,7 @@ const MyOwnTimeSection = () => {
                             >
                                 What I do<br/>in my own time.
                             </Typography>
-                            <Typography variant="body1" align="left" sx={{...typoText}} paragraph>
+                            <Typography component={'div'} variant="body1" align="left" sx={{...typoText}} paragraph>
                                 Personal Projects which interest me
                                 <ul className="list" style={{ marginLeft:'1rem', listStyle: 'disc outside'}}>
                                     <li>Experimentation with Back-End services using Java with Spring Boot</li>

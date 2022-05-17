@@ -70,7 +70,7 @@ export default function Footer() {
                       backgroundColor: 'transparent'
                     }
                   }}>
-                    <FontAwesomeIcon icon={faTwitter} size="md" />
+                    <FontAwesomeIcon icon={faTwitter} />
                   </IconButton>
                 </Grid>
                 <Grid item xs={1} sx={{...iconLinkStyling}}>
@@ -80,7 +80,7 @@ export default function Footer() {
                       backgroundColor: 'transparent'
                     }
                   }}>
-                    <FontAwesomeIcon icon={faGithub} size="md" />
+                    <FontAwesomeIcon icon={faGithub} />
                   </IconButton>
                 </Grid>
                 <Grid item xs={1} sx={{...iconLinkStyling}}>
@@ -90,7 +90,7 @@ export default function Footer() {
                       backgroundColor: 'transparent'
                     }
                   }}>
-                    <FontAwesomeIcon icon={faLinkedin} size="md" />
+                    <FontAwesomeIcon icon={faLinkedin} />
                   </IconButton>
                 </Grid>
 

@@ -1,12 +1,15 @@
 import * as React from "react";
 import PropTypes from "prop-types";
+import {Typography} from "@mui/material";
 
 export const HTMLContent = ({ content, className }) => (
   <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
 );
 
 const Content = ({ content, className }) => (
-  <div className={className}>{content}</div>
+    <Typography gutterBottom className={className} variant="body1" component="div" align="center" >
+      {content}
+    </Typography>
 );
 
 Content.propTypes = {

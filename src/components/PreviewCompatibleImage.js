@@ -8,7 +8,7 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
   const { alt = "", childImageSharp, image } = imageInfo;
 
   if (!!image && !!image.childImageSharp) {
-    return (
+    /*return (
       <GatsbyImage
         image={image.childImageSharp.gatsbyImageData}
         style={imageStyle}
@@ -24,6 +24,27 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
       />
     );
     // for Netlify CMS 
+  } else if (image) {
+    return <img style={{imageStyle}} src={image} alt={alt} />;
+  } else {
+    return null
+  }*/
+    return (
+        <GatsbyImage
+            image={image.childImageSharp.gatsbyImageData}
+            style={imageStyle}
+            alt={alt}
+        />
+    );
+  } else if (!!childImageSharp) {
+    return (
+        <GatsbyImage
+            image={childImageSharp.gatsbyImageData}
+            style={imageStyle}
+            alt={alt}
+        />
+    );
+    // for Netlify CMS
   } else if (image) {
     return <img style={{imageStyle}} src={image} alt={alt} />;
   } else {

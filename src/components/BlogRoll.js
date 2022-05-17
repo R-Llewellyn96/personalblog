@@ -1,7 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import {Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, IconButton, Typography} from "@mui/material";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowRightLong} from "@fortawesome/free-solid-svg-icons/faArrowRightLong";
+import theme from "../theme";
+import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import placeholder_img from "../img/placeholder_img.png"
 
 class BlogRollTemplate extends React.Component {
   render() {
@@ -9,57 +14,88 @@ class BlogRollTemplate extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
-        {posts &&
-          posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                          width:
-                            post.frontmatter.featuredimage.childImageSharp
-                              .gatsbyImageData.width,
-                          height:
-                            post.frontmatter.featuredimage.childImageSharp
-                              .gatsbyImageData.height,
+        <Grid container spacing={2}>
+          {posts &&
+              posts.map(({ node: post }) => (
+
+                  <Grid item key={post.id} xs={12} sm={6} md={4}>
+                    <Card
+                        elevation={0}
+                        variant={'outlined'}
+                        sx={{
+                          height: '100%',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          borderRadius: '2%'
                         }}
-                      />
-                    </div>
-                  ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
                     >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
-                </header>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </article>
-            </div>
-          ))}
-      </div>
+                      <CardActionArea>
+
+                        {post.frontmatter.featuredimage ? (
+                                <div className="featured-thumbnail">
+                                  <PreviewCompatibleImage
+                                      imageInfo={{
+                                        image: post.frontmatter.featuredimage,
+                                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                                        width:
+                                        post.frontmatter.featuredimage.childImageSharp
+                                            .gatsbyImageData.width,
+                                        height:
+                                        post.frontmatter.featuredimage.childImageSharp
+                                            .gatsbyImageData.height,
+                                      }}
+                                  />
+                                </div>
+                        ) :
+                        <CardMedia
+                            component="img"
+                            image={placeholder_img}
+                            alt={'Placeholder Image'}
+                        />
+                        }
+
+
+                        <CardContent sx={{ flexGrow: 1 }}>
+
+                          <Typography sx={{ color: '#073042', marginBottom: '1rem'}} variant="h5" fontSize={22} >
+                            {post.frontmatter.title}
+                          </Typography>
+
+                          <Typography sx={{ color: '#073042'}} gutterBottom variant="subtitle2" fontWeight={'normal'} >
+                            {post.excerpt}
+                          </Typography>
+
+                        </CardContent>
+
+                        <CardActions sx={{ marginBottom: '1rem'}}>
+
+                          <Typography sx={{
+                            color: '#073042',
+                            marginLeft: '0.75rem',
+                            flex: 1
+                          }} gutterBottom variant="subtitle1" fontWeight={'normal'} >
+                            By Ryan Llewellyn - {post.frontmatter.date}
+                          </Typography>
+
+                          <Link to={post.fields.slug}>
+                            <IconButton aria-label="card-link" sx={{
+                              color: '#073042',
+                              "&:hover": {
+                                color: theme.palette.primary.main,
+                                backgroundColor: 'transparent',
+                              },
+                            }}>
+                              <FontAwesomeIcon icon={faArrowRightLong} size="lg" />
+                            </IconButton>
+                          </Link>
+
+                        </CardActions>
+                      </CardActionArea>
+                    </Card>
+                  </Grid>
+              ))}
+        </Grid>
+
     )
   }
 }
@@ -84,7 +120,7 @@ export default function BlogRoll() {
           ) {
             edges {
               node {
-                excerpt(pruneLength: 400)
+                excerpt(pruneLength: 140)
                 id
                 fields {
                   slug
@@ -97,7 +133,8 @@ export default function BlogRoll() {
                   featuredimage {
                     childImageSharp {
                       gatsbyImageData(
-                        width: 120
+                        width: 570
+                        height: 360
                         quality: 100
                         layout: CONSTRAINED
                       )

@@ -5,45 +5,75 @@ import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import {Container, Typography} from "@mui/material";
+import { nameStyle } from "../styling/myCustomStylingComponents";
+import Chip from "@mui/material/Chip";
+import theme from "../theme";
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
-  content,
-  contentComponent,
-  description,
-  tags,
-  title,
-  helmet,
+                                   content,
+                                   contentComponent,
+                                   description,
+                                   tags,
+                                   title,
+                                   helmet
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
-      {helmet || ""}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
+      <Container maxWidth="md">
+          <section className="section">
+              {helmet || ""}
+              <div className="container content">
+                  <div className="columns">
+                      <div className="column is-10 is-offset-1">
+
+                          <Typography gutterBottom variant="h4" component="div" align="center" style={{...nameStyle, marginTop: '8rem'}}>
+                              {title}
+                          </Typography>
+
+                          <Typography gutterBottom variant="subtitle1" component="div" align="center" sx={{fontSize: '125%', marginBottom: '1rem'}} >
+                              {description}
+                          </Typography>
+
+                          <PostContent content={content} />
+
+                          {tags && tags.length ? (
+                              <div style={{ marginTop: `4rem` }}>
+
+                                  <Typography gutterBottom variant="h5" component="div" align="left" style={{...nameStyle}}>
+                                      Tags
+                                  </Typography>
+
+                                  <ul className="taglist" style={{marginBottom: '4rem'}}>
+                                      {tags.map((tag) => (
+                                          <li key={tag + `tag`}>
+                                              <Link to={`/tags/${kebabCase(tag)}/`}>
+                                                  <Chip
+                                                      label={tag}
+                                                      sx={{
+                                                          marginBottom: '0.25rem',
+                                                          color: '#fff',
+                                                          backgroundColor: theme.palette.primary.main,
+                                                          fontSize: '80%',
+                                                          '&:hover': {
+                                                              color: '#fff',
+                                                              backgroundColor: theme.palette.primary.dark,
+                                                          }
+                                                  }}
+                                                  />
+                                              </Link>
+                                          </li>
+                                      ))}
+                                  </ul>
+                              </div>
+                          ) : null}
+                      </div>
+                  </div>
               </div>
-            ) : null}
-          </div>
-        </div>
-      </div>
-    </section>
+          </section>
+      </Container>
   );
 };
 
@@ -53,6 +83,7 @@ BlogPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  absolutePath: PropTypes.string
 };
 
 const BlogPost = ({ data }) => {

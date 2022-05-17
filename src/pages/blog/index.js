@@ -1,37 +1,46 @@
 import * as React from "react";
-
 import Layout from "../../components/Layout";
 import BlogRoll from "../../components/BlogRoll";
+import {Box, Container, Typography} from "@mui/material";
+import {boxStyling} from "../../styling/myCustomStylingComponents";
 
 export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div
-          className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url('/img/blog-index.jpg')`,
-          }}
-        >
-          <h1
-            className="has-text-weight-bold is-size-1"
-            style={{
-              boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-              backgroundColor: "#f40",
-              color: "white",
-              padding: "1rem",
-            }}
-          >
-            Latest Stories
-          </h1>
-        </div>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <BlogRoll />
-            </div>
-          </div>
-        </section>
+          <Box sx={{...boxStyling}}>
+              <Container sx={{ paddingTop: '8rem', paddingBottom: '4rem'}} maxWidth="lg">
+                  <Typography
+                      component="h4"
+                      variant="h4"
+                      align="center"
+                      color="#000"
+                      fontWeight={"normal"}
+                      gutterBottom
+                      sx={{ marginBottom: '1rem'}}
+                  >
+                      Ryan's Blog
+                  </Typography>
+                  <Typography
+                      component="h5"
+                      variant="h5"
+                      align="center"
+                      color="#000"
+                      fontWeight={"normal"}
+                      gutterBottom
+                      sx={{ marginBottom: '4rem'}}
+                  >
+                      A collection of thoughts and ramblings on a variety of topics that interest me.
+                  </Typography>
+                  <section className="section">
+                      <div className="container">
+                          <div className="content">
+                              <BlogRoll />
+                          </div>
+                      </div>
+                  </section>
+              </Container>
+          </Box>
       </Layout>
     );
   }

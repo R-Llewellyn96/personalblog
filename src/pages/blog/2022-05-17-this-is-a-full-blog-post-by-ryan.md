@@ -1,13 +1,18 @@
 ---
 templateKey: blog-post
-title: This is a full blog post by Ryan
+title: This is a test of a full length blog post using Netlify
 date: 2022-05-17T15:49:19.123Z
-description: Here is the description for the Blog post to show as  a subtitle slug
+description: Here is the description for the Blog post to show as a subtitle and
+  short descriptor
 featuredpost: true
 featuredimage: /img/forest-in-winter.jpg
 tags:
   - FirstPost
+  - WritingTest
+  - Testing
 ---
+![Forest In Winter](/img/forest-in-winter.jpg)
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue mi orci, a porttitor justo convallis vitae. Vestibulum eu lectus nec mi feugiat viverra eget ac enim. Sed id sollicitudin dolor, a imperdiet leo. Nunc id interdum sapien. Nunc placerat euismod tellus, aliquet auctor enim suscipit sed. Nunc massa odio, volutpat vel malesuada vitae, suscipit ut lacus. Etiam volutpat mauris quis dolor semper, hendrerit gravida dolor luctus. In mi leo, fermentum sit amet consequat nec, tempor quis elit. Praesent vulputate tortor ex, et semper mi vulputate sed. Ut iaculis id lectus id consectetur. Cras congue congue condimentum. Nunc massa nulla, aliquam ac ullamcorper sit amet, lobortis eu enim. Vestibulum commodo sapien massa, at pellentesque orci mattis eu.
 
 ![Morning Coffee on a table](/img/chemex.jpg "Morning Coffee")

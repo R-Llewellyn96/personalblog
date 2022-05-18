@@ -6,13 +6,14 @@ import { cardMaterial } from "../styling/myCustomStylingComponents";
 const boxStyling = {
     backgroundColor: '#e8f2ed',
     paddingTop: '8rem',
+    paddingBottom: '4rem',
     paddingLeft: 0,
     paddingRight: 0,
     marginLeft: 0,
     marginRight: 0,
     maxWidth: '100%',
     width: '100vw',
-    minHeight: '93vh'
+    minHeight: '100vh'
 }
 
 const NotFoundPage = () => (

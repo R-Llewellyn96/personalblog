@@ -8,7 +8,7 @@ export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-          <Box sx={{...boxStyling}}>
+          <Box sx={{...boxStyling, backgroundColor: '#d7eed2'}}>
               <Container sx={{ paddingTop: '8rem', paddingBottom: '4rem'}} maxWidth="lg">
                   <Typography
                       component="h4"

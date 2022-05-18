@@ -80,7 +80,7 @@ class BlogRollTemplate extends React.Component {
                             <IconButton aria-label="card-link" component={Link} to={post.fields.slug} sx={{
                               color: '#073042',
                               "&:hover": {
-                                color: theme.palette.primary.main,
+                                color: theme.palette.secondary.main,
                                 backgroundColor: 'transparent',
                               },
                             }}>

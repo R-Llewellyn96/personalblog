@@ -5,8 +5,8 @@ import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import {Container, Typography} from "@mui/material";
-import { nameStyle } from "../styling/myCustomStylingComponents";
+import {Box, Container, Typography} from "@mui/material";
+import {boxStyling, nameStyle} from "../styling/myCustomStylingComponents";
 import Chip from "@mui/material/Chip";
 import theme from "../theme";
 
@@ -22,58 +22,60 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-      <Container maxWidth="md">
-          <section className="section">
-              {helmet || ""}
-              <div className="container content">
-                  <div className="columns">
-                      <div className="column is-10 is-offset-1">
+      <Box sx={{...boxStyling}}>
+          <Container maxWidth="md">
+              <section className="section">
+                  {helmet || ""}
+                  <div className="container content">
+                      <div className="columns">
+                          <div className="column is-10 is-offset-1">
 
-                          <Typography gutterBottom variant="h4" component="div" align="center" style={{...nameStyle, marginTop: '8rem'}}>
-                              {title}
-                          </Typography>
+                              <Typography gutterBottom variant="h4" component="div" align="center" style={{...nameStyle, marginTop: '8rem'}}>
+                                  {title}
+                              </Typography>
 
-                          <Typography gutterBottom variant="subtitle1" component="div" align="center" sx={{fontSize: '125%', marginBottom: '1rem'}} >
-                              {description}
-                          </Typography>
+                              <Typography gutterBottom variant="subtitle1" component="div" align="center" sx={{fontSize: '125%', marginBottom: '1rem'}} >
+                                  {description}
+                              </Typography>
 
-                          <PostContent content={content} />
+                              <PostContent content={content} />
 
-                          {tags && tags.length ? (
-                              <div style={{ marginTop: `4rem` }}>
+                              {tags && tags.length ? (
+                                  <div style={{ marginTop: `4rem` }}>
 
-                                  <Typography gutterBottom variant="h5" component="div" align="left" style={{...nameStyle}}>
-                                      Tags
-                                  </Typography>
+                                      <Typography gutterBottom variant="h5" component="div" align="left" style={{...nameStyle}}>
+                                          Tags
+                                      </Typography>
 
-                                  <ul className="taglist" style={{marginBottom: '4rem'}}>
-                                      {tags.map((tag) => (
-                                          <li key={tag + `tag`}>
-                                              <Link to={`/tags/${kebabCase(tag)}/`}>
-                                                  <Chip
-                                                      label={tag}
-                                                      sx={{
-                                                          marginBottom: '0.25rem',
-                                                          color: '#fff',
-                                                          backgroundColor: theme.palette.primary.main,
-                                                          fontSize: '80%',
-                                                          '&:hover': {
+                                      <ul className="taglist" style={{marginBottom: '4rem'}}>
+                                          {tags.map((tag) => (
+                                              <li key={tag + `tag`}>
+                                                  <Link to={`/tags/${kebabCase(tag)}/`}>
+                                                      <Chip
+                                                          label={tag}
+                                                          sx={{
+                                                              marginBottom: '0.25rem',
                                                               color: '#fff',
-                                                              backgroundColor: theme.palette.primary.dark,
-                                                          }
-                                                  }}
-                                                  />
-                                              </Link>
-                                          </li>
-                                      ))}
-                                  </ul>
-                              </div>
-                          ) : null}
+                                                              backgroundColor: theme.palette.primary.main,
+                                                              fontSize: '80%',
+                                                              '&:hover': {
+                                                                  color: '#fff',
+                                                                  backgroundColor: theme.palette.primary.dark,
+                                                              }
+                                                          }}
+                                                      />
+                                                  </Link>
+                                              </li>
+                                          ))}
+                                      </ul>
+                                  </div>
+                              ) : null}
+                          </div>
                       </div>
                   </div>
-              </div>
-          </section>
-      </Container>
+              </section>
+          </Container>
+      </Box>
   );
 };
 

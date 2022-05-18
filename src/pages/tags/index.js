@@ -3,6 +3,21 @@ import { kebabCase } from "lodash";
 import { Helmet } from "react-helmet";
 import { Link, graphql } from "gatsby";
 import Layout from "../../components/Layout";
+import {Box, Container, ListItem, Typography} from "@mui/material";
+import Chip from "@mui/material/Chip";
+import {buttonInBox} from "../../styling/myCustomStylingComponents";
+
+const boxStyling = {
+  backgroundColor: '#e8f2ed',
+  paddingTop: '8rem',
+  paddingLeft: 0,
+  paddingRight: 0,
+  marginLeft: 0,
+  marginRight: 0,
+  maxWidth: '100%',
+  width: '100vw',
+  minHeight: '90vh'
+}
 
 const TagsPage = ({
   data: {
@@ -13,28 +28,37 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
-    <section className="section">
-      <Helmet title={`Tags | ${title}`} />
-      <div className="container content">
-        <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: "6rem" }}
-          >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
-              {group.map((tag) => (
-                <li key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    {tag.fieldValue} ({tag.totalCount})
-                  </Link>
-                </li>
-              ))}
-            </ul>
+    <Box sx={{...boxStyling}}>
+      <Container sx={{ paddingBottom: '4rem'}} maxWidth="lg">
+        <section className="section">
+          <Helmet title={`Tags | ${title}`} />
+          <div className="container content">
+            <div className="columns">
+              <div
+                  className="column is-10 is-offset-1"
+                  style={{ marginBottom: "6rem" }}
+              >
+                <Typography variant="h4" align="left" paragraph>
+                  Tags
+                </Typography>
+                <ul className="taglist">
+                  {group.map((tag) => (
+                      <ListItem key={tag.fieldValue}>
+                        <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                          <Chip
+                              label={`${tag.fieldValue} (${tag.totalCount})`}
+                              sx={{...buttonInBox, marginTop: '0rem', marginBottom: '0rem',}}
+                          />
+                        </Link>
+                      </ListItem>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
+      </Container>
+    </Box>
   </Layout>
 );
 

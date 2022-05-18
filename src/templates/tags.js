@@ -2,16 +2,23 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
+import { buttonInBox} from "../styling/myCustomStylingComponents";
+import {Box, Button, Container, ListItem, Typography} from "@mui/material";
+import Chip from "@mui/material/Chip";
 
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
     const postLinks = posts.map((post) => (
-      <li key={post.node.fields.slug}>
-        <Link to={post.node.fields.slug}>
-          <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
-        </Link>
-      </li>
+
+        <ListItem key={post.node.fields.slug}>
+          <Link to={post.node.fields.slug}>
+            <Chip
+                label={post.node.frontmatter.title}
+                sx={{...buttonInBox, marginTop: '0.25rem', marginBottom: '0.25rem',}}
+            />
+          </Link>
+        </ListItem>
     ));
     const tag = this.props.pageContext.tag;
     const title = this.props.data.site.siteMetadata.title;
@@ -20,25 +27,46 @@ class TagRoute extends React.Component {
       totalCount === 1 ? "" : "s"
     } tagged with “${tag}”`;
 
+    const boxStyling = {
+      backgroundColor: '#e8f2ed',
+      paddingTop: '8rem',
+      paddingLeft: 0,
+      paddingRight: 0,
+      marginLeft: 0,
+      marginRight: 0,
+      maxWidth: '100%',
+      width: '100vw',
+      minHeight: '90vh'
+    }
+
     return (
       <Layout>
-        <section className="section">
-          <Helmet title={`${tag} | ${title}`} />
-          <div className="container content">
-            <div className="columns">
-              <div
-                className="column is-10 is-offset-1"
-                style={{ marginBottom: "6rem" }}
-              >
-                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <ul className="taglist">{postLinks}</ul>
-                <p>
-                  <Link to="/tags/">Browse all tags</Link>
-                </p>
+        <Box sx={{...boxStyling}}>
+          <Container sx={{ paddingBottom: '4rem'}} maxWidth="lg">
+            <section className="section">
+              <Helmet title={`${tag} | ${title}`} />
+              <div className="container content">
+                <div className="columns">
+                  <div
+                      className="column is-10 is-offset-1"
+                      style={{ marginBottom: "6rem" }}
+                  >
+                    <Typography variant="h5" align="left" paragraph>
+                      {tagHeader}
+                    </Typography>
+                    <ul className="taglist">{postLinks}</ul>
+
+                    <Link to="/tags/">
+                      <Button variant="contained" size={"large"} sx={{...buttonInBox}}
+                      >BROWSE ALL TAGS</Button>
+                    </Link>
+
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </section>
+            </section>
+          </Container>
+        </Box>
       </Layout>
     );
   }

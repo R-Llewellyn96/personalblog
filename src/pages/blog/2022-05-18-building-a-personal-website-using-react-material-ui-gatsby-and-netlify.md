@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Building a personal website using React, Material UI, Gatsby and Netlify
-date: 2022-05-18T16:38:52.432Z
+date: 2022-05-18T16:40:52.432Z
 description: A collection of thoughts and opinions regarding the experience of
   creating this website through the use of these technologies.
 featuredpost: true
@@ -13,10 +13,14 @@ tags:
   - React
   - MaterialUI
 ---
-![Gatsby + Netlify](/img/gatsby_netlify.jpg "Gatsby + Netlify")
+![Gatsby + Netlify](/img/gatsby_netlify.jpg)
 
-
-<br />
+This site was built using ReactJS, with components from Material UI, Gatsby as a Static Site Generator (SSG) and Netlify to act as a host server, CMS and Continuous Integration / Continuous Development platform.
+<br /><br />
+The initial motivation behind using Gatsby was to reduce hosting costs for this site, as a Static Site Generator the end result of a Gatsby project are simple static webpages, which are typically much cheaper to host when compared to Dynamic Single Page Applications, typical of most React projects, there is also the added benefit of improved site performance as pages are pre-rendered at build time and do not have to be interpreted by the Javascript engine on the users browser.
+<br /><br />
+While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+<br /><br />
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis, dui ac viverra ullamcorper, felis risus posuere tortor, non pretium ligula lorem nec lacus. Nullam quis ante et nunc malesuada iaculis. Curabitur a fermentum nisl, in laoreet massa. Praesent a ex ut diam suscipit rutrum quis in mi. Cras nec est vitae nibh condimentum luctus eget vitae urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis blandit ligula. Maecenas molestie libero lobortis ante fringilla, sed convallis augue euismod.
 <br /><br />
 Integer magna massa, fermentum eu luctus id, maximus eu enim. Etiam et diam ac ligula facilisis tincidunt. Pellentesque quis turpis mollis libero aliquet facilisis sagittis quis velit. Nulla fringilla semper accumsan. Aenean nisi lorem, ultricies eu volutpat quis, molestie bibendum dui. Quisque ut efficitur risus, sit amet vulputate arcu. Vivamus porta erat ex, eu elementum metus iaculis at. Cras mollis, augue rutrum consectetur consectetur, elit mauris euismod velit, in volutpat quam sapien volutpat dui. Nulla facilisi. Donec consectetur lobortis iaculis. Nunc imperdiet ex ac tellus tempus, at bibendum justo iaculis. Praesent dapibus rutrum nisi ut convallis. Praesent eu lorem vel elit dapibus pretium. Curabitur elementum diam ultrices pharetra interdum.

@@ -12,7 +12,7 @@ const boxStyling = {
     marginRight: 0,
     maxWidth: '100%',
     width: '100vw',
-    minHeight: '90vh'
+    minHeight: '93vh'
 }
 
 const NotFoundPage = () => (

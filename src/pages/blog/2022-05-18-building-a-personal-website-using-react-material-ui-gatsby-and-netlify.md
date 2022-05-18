@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Building a personal website using React, Material UI, Gatsby and Netlify
+title: Building a personal website using React, Gatsby and Netlify
 date: 2022-05-18T16:40:52.432Z
 description: A collection of thoughts and opinions regarding the experience of
   creating this website through the use of these technologies.

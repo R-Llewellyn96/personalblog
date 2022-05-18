@@ -5,7 +5,7 @@ date: 2022-05-18T16:40:52.432Z
 description: A collection of thoughts and opinions regarding the experience of
   creating this website through the use of these technologies.
 featuredpost: true
-featuredimage: /img/gatsby_netlify.jpg
+featuredimage: /img/gatsby.jpg
 tags:
   - Gatsby
   - Netlify
@@ -13,7 +13,7 @@ tags:
   - React
   - MaterialUI
 ---
-![Gatsby + Netlify](/img/gatsby_netlify.jpg)
+![Gatsby + Netlify](/img/gatsby.jpg)
 
 This site was built using ReactJS, with components from Material UI, Gatsby as a Static Site Generator (SSG) and Netlify to act as a host server, CMS and Continuous Integration / Continuous Development platform.
 <br /><br />

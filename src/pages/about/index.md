@@ -13,4 +13,4 @@ This section serves as a general introduction to myself in my Professional Capac
 
 ### Blog Section
 
-This purely serves as a place for me to write about anything that comes to mind, whether that's Technology and Programming, goings on in the Tech Sector, other topics I'm interested in outside of Software Engineering as well as general thoughts and ramblings, by no means an experts opinion.
+This purely serves as a place for me to write about anything that comes to mind, whether that's Technology and Programming, goings on in the Tech Sector, other topics I'm interested in outside of Software Engineering as well as general thoughts and ramblings, by no means an expert's opinion.

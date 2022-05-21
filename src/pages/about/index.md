@@ -3,7 +3,7 @@ templateKey: about-page
 path: /about
 title: Trying to find hidden pages on this website eh?
 ---
-## About This Site
+## **About This Site**
 
 This is my personal website and blog, Built using ReactJS, Gatsby and Netlify.
 

@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Personal Blog using Gatsby, and Netlify Project",
-  "version": "1.9.0",
+  "name": "ryans-personal-site-and-blog",
+  "description": "This site is the Professional Webpage and Personal Blog of Ryan Llewellyn, A Software Engineer based in Liverpool.",
+  "version": "1.9.5",
   "homepage": "",
   "author": "Ryan Llewellyn",
   "dependencies": {

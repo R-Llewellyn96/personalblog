@@ -33,7 +33,7 @@ const containerStyling = {
 }
 
 const iconLinkStyling = {
-  marginTop: '0.25rem'
+  marginTop: '0rem'
 }
 
 export default function Footer() {
@@ -45,7 +45,7 @@ export default function Footer() {
           <Grid container spacing={1}>
             <Grid item xs={12} sm={12} md={6}>
 
-              <Grid container spacing={2}>
+              <Grid container spacing={5}>
                 <Grid item xs={8} sm={9} md={4} lg={3}>
                   <Typography
                       component="h5"
@@ -70,7 +70,7 @@ export default function Footer() {
                       backgroundColor: 'transparent'
                     }
                   }}>
-                    <FontAwesomeIcon icon={faTwitter} />
+                    <FontAwesomeIcon icon={faTwitter} size="lg"/>
                   </IconButton>
                 </Grid>
                 <Grid item xs={1} sx={{...iconLinkStyling}}>
@@ -80,7 +80,7 @@ export default function Footer() {
                       backgroundColor: 'transparent'
                     }
                   }}>
-                    <FontAwesomeIcon icon={faGithub} />
+                    <FontAwesomeIcon icon={faGithub} size="lg"/>
                   </IconButton>
                 </Grid>
                 <Grid item xs={1} sx={{...iconLinkStyling}}>
@@ -90,7 +90,7 @@ export default function Footer() {
                       backgroundColor: 'transparent'
                     }
                   }}>
-                    <FontAwesomeIcon icon={faLinkedin} />
+                    <FontAwesomeIcon icon={faLinkedin} size="lg"/>
                   </IconButton>
                 </Grid>
 

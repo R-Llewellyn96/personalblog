@@ -14,6 +14,7 @@ export default function TopLayout(props) {
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <meta name="viewport" content="initial-scale=1, width=device-width" />
+                <link rel="DNS-prefetch" href="https://fonts.googleapis.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com/"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin/>
                 <link

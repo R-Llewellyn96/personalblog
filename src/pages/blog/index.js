@@ -21,7 +21,7 @@ export default class BlogIndexPage extends React.Component {
     return (
       <Layout>
           <Box sx={{...boxStyling}}>
-              <Container sx={{ paddingTop: '8rem', paddingBottom: '4rem'}} maxWidth="lg">
+              <Container sx={{ paddingTop: '4rem', paddingBottom: '4rem'}} justifyContent="center" maxWidth="lg">
                   <Typography
                       component="h4"
                       variant="h4"

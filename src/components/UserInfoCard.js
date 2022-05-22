@@ -23,7 +23,7 @@ import {
 } from "../styling/myCustomStylingComponents"
 import "./styles.css";
 import {faEarthEurope} from "@fortawesome/free-solid-svg-icons/faEarthEurope";
-import user_img from "../img/user_image.jpg"
+import user_img from "../img/user_image.webp"
 
 const defaultUser = {
     name: "Ryan Llewellyn",

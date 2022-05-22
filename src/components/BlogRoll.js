@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRightLong} from "@fortawesome/free-solid-svg-icons/faArrowRightLong";
 import theme from "../theme";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
-import placeholder_img from "../img/placeholder_img.png"
+import placeholder_img from "../img/placeholder_img.webp"
 
 class BlogRollTemplate extends React.Component {
   render() {

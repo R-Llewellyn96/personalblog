@@ -2,13 +2,25 @@ import * as React from "react";
 import Layout from "../../components/Layout";
 import BlogRoll from "../../components/BlogRoll";
 import {Box, Container, Typography} from "@mui/material";
-import {boxStyling} from "../../styling/myCustomStylingComponents";
+
+const boxStyling = {
+    backgroundColor: '#d7eed2',
+    paddingTop: '8rem',
+    paddingBottom: '4rem',
+    paddingLeft: 0,
+    paddingRight: 0,
+    marginLeft: 0,
+    marginRight: 0,
+    maxWidth: '100%',
+    width: '100vw',
+    minHeight: '100vh'
+}
 
 export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-          <Box sx={{...boxStyling, backgroundColor: '#d7eed2'}}>
+          <Box sx={{...boxStyling}}>
               <Container sx={{ paddingTop: '8rem', paddingBottom: '4rem'}} maxWidth="lg">
                   <Typography
                       component="h4"

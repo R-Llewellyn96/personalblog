@@ -5,7 +5,7 @@ import {Box, Container, Typography} from "@mui/material";
 
 const boxStyling = {
     backgroundColor: '#d7eed2',
-    paddingTop: '8rem',
+    paddingTop: '4rem',
     paddingBottom: '4rem',
     paddingLeft: 0,
     paddingRight: 0,

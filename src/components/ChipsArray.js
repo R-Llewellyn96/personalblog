@@ -61,7 +61,7 @@ const ChipsArray = (props) => {
                         <Chip
                             icon={data.icon}
                             label={data.label}
-                            sx={{backgroundColor: '#FAF9F6', fontSize: '80%'}}
+                            sx={{backgroundColor: '#FAF9F6', fontSize: '0.9rem'}}
                         />
                     </ListItem>
                 );

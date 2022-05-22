@@ -19,6 +19,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/img/code-solid.svg',
+      },
+    },
+    {
       resolve: "gatsby-plugin-sass",
       options: {
         sassOptions: {

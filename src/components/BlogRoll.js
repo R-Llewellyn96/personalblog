@@ -14,7 +14,7 @@ class BlogRollTemplate extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{justifyContent: 'center'}}>
           {posts &&
               posts.map(({ node: post }) => (
 

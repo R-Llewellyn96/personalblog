@@ -10,16 +10,6 @@ module.exports = {
     'gatsby-plugin-mui-emotion',
     `gatsby-plugin-fontawesome-css`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `Roboto`,
-          `sans serif\:400,500,700`
-        ],
-        display: 'swap'
-      }
-    },
-    {
       resolve: "gatsby-plugin-sass",
       options: {
         sassOptions: {

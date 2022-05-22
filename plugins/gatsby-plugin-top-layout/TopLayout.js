@@ -14,7 +14,6 @@ export default function TopLayout(props) {
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <meta name="viewport" content="initial-scale=1, width=device-width" />
-                <!-- This is a Font import performance optimisation -->
                 <link rel="preconnect" href="https://fonts.gstatic.com/"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin/>
                 <link

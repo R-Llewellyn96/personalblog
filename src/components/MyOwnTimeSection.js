@@ -101,9 +101,9 @@ const MyOwnTimeSection = () => {
     const repos = [
         {
             id: 'uniqueId1',
-            html_url: "https://github.com/R-Llewellyn96/gatsby-personalsite",
-            full_name: "R-Llewellyn96/gatsby-personalsite",
-            description: "Personal Website built using React, Material UI and Gatsby JS",
+            html_url: "https://github.com/R-Llewellyn96/personalblog",
+            full_name: "R-Llewellyn96/personalblog",
+            description: "Code for Gatsby and Netlify Personal Blog",
             topics: [],
             language: "JavaScript",
             stargazers_count: 0,

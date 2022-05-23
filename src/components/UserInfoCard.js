@@ -30,7 +30,7 @@ const defaultUser = {
     company: "IQBlade Ltd",
     avatar_url: {user_img},
     location: "Liverpool, United Kingdom",
-    bio: "Data Analyst based in Liverpool, UK.Specialising in Java development with Spring and Data Analytics in Python, with some interest in React on the front-end.",
+    bio: "Data Analyst based in Liverpool, UK. Specialising in Java development with Spring and Data Analytics in Python, with some interest in React on the front-end.",
     blog: "https://www.rllewellyn96.dev",
     login: "R-Llewellyn96",
     html_url: "https://github.com/R-Llewellyn96",

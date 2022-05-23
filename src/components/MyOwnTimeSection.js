@@ -11,6 +11,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faJava} from "@fortawesome/free-brands-svg-icons/faJava";
 import {faLeaf} from "@fortawesome/free-solid-svg-icons/faLeaf";
 import {faReact} from "@fortawesome/free-brands-svg-icons/faReact";
+import {textAreaStyle} from "../styling/myCustomStylingComponents";
 
 const MyOwnTimeSection = () => {
 
@@ -52,12 +53,6 @@ const MyOwnTimeSection = () => {
             borderWidth: '2px',
             padding: '-10px -5px -5px -10px',
         },
-    }
-
-    const textAreaStyle = {
-        paddingLeft: '64px',
-        paddingRight: '64px',
-        justifyContent: 'center'
     }
 
     const chipDataMyTime = [

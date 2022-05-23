@@ -25,7 +25,7 @@ const navbarStyle = {
 
 export default function Navbar() {
 
-  const title = "Developer Profile"
+  const title = "Ryan's Profile"
   return (
       <Box sx={{...boxStyle}}>
         <AppBar elevation={1}>

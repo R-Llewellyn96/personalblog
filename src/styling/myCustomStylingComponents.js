@@ -39,8 +39,8 @@ const buttonInBox = {
 }
 
 const textAreaStyle = {
-    paddingLeft: '64px',
-    paddingRight: '64px',
+    paddingLeft: '0px',
+    paddingRight: '0px',
     justifyContent: 'center'
 }
 

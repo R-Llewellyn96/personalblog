@@ -6,8 +6,8 @@ import {
     boxStyling,
     typoSubtitle,
     typoText,
-    textAreaStyle,
-    leftSideUserCardGridStyling
+    leftSideUserCardGridStyling,
+    textAreaStyle
 } from "../styling/myCustomStylingComponents"
 
 export default function AboutMeSection() {

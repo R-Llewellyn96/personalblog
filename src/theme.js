@@ -5,6 +5,7 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
     typography: {
         fontFamily: [
+            'Cabin',
             'Roboto',
             'Arial',
             '"Helvetica Neue"',
@@ -21,6 +22,9 @@ const theme = createTheme({
         error: {
             main: red.A400,
         },
+        text: {
+            primary: '#333'
+        }
     },
 });
 

@@ -9,7 +9,6 @@ import {
 const upperTypography = {
   marginLeft: '0.5rem',
   marginTop: '0.25rem',
-  color: '#000',
   flexGrow: '1'
 }
 
@@ -28,7 +27,7 @@ export default function Navbar() {
   const title = "Ryan's Profile"
   return (
       <Box sx={{...boxStyle}}>
-        <AppBar elevation={1}>
+        <AppBar elevation={1} sx={{position: 'fixed', top: 0, width: '100%'}}>
           <Toolbar sx={{...navbarStyle}}>
             <FontAwesomeIcon icon={faCode} size="lg" style={{
               color: '#3ddc84',

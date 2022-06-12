@@ -152,7 +152,6 @@ const MyToolsSection = () => {
                     component="h2"
                     variant="h2"
                     align="center"
-                    color="#000"
                     fontWeight={"normal"}
                     gutterBottom
                     sx={{ marginBottom: '1rem'}}
@@ -163,7 +162,6 @@ const MyToolsSection = () => {
                     component="h5"
                     variant="h5"
                     align="center"
-                    color="#000"
                     fontWeight={"normal"}
                     gutterBottom
                     sx={{ marginBottom: '4rem'}}
@@ -187,11 +185,11 @@ const MyToolsSection = () => {
                             >
                                 <CardActionArea>
                                     <CardContent sx={{ flexGrow: 1 }}>
-                                        <Typography sx={{ color: '#073042'}} gutterBottom variant="subtitle2" fontWeight={'normal'} >
+                                        <Typography gutterBottom variant="subtitle2" fontWeight={'normal'} >
                                             {card.title}
                                         </Typography>
 
-                                        <Typography sx={{ color: '#073042'}} variant="h5" fontSize={22} >
+                                        <Typography variant="h5" fontSize={22} >
                                             {card.text}
                                         </Typography>
                                     </CardContent>

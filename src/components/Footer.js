@@ -51,7 +51,6 @@ export default function Footer() {
                       component="h5"
                       variant="h5"
                       align="left"
-                      color="#000"
                       fontWeight={"normal"}
                       gutterBottom
                       sx={{

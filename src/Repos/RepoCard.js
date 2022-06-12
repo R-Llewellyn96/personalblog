@@ -78,7 +78,7 @@ const RepoCard = ({repo}) => {
                             rel="noopener"
                             aria-label="launch">
                             <LaunchIcon sx={{
-                                color: '#000',
+                                color: '#333',
                                 verticalAlign: "text-bottom",
                                 "&:hover": {
                                     color: '#1a73e8',
@@ -93,7 +93,7 @@ const RepoCard = ({repo}) => {
                         component="p"
                         paragraph
                         style={{
-                            color: '#000'
+                            color: '#333'
                         }}
                     >
                         {description}
@@ -149,7 +149,7 @@ const RepoCard = ({repo}) => {
                             target="_blank"
                             rel="noopener"
                             sx={{
-                                color: '#333333',
+                                color: '#333',
                                 marginRight: '1rem',
                                 "&:hover" : {
                                     color: '#1765cc'
@@ -177,7 +177,7 @@ const RepoCard = ({repo}) => {
                             target="_blank"
                             rel="noopener"
                             sx={{
-                                color: '#333333',
+                                color: '#333',
                                 marginRight: '1rem',
                                 "&:hover" : {
                                     color: '#1765cc'

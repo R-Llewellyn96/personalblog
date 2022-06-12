@@ -26,7 +26,6 @@ export default class BlogIndexPage extends React.Component {
                       component="h4"
                       variant="h4"
                       align="center"
-                      color="#000"
                       fontWeight={"normal"}
                       gutterBottom
                       sx={{ marginBottom: '1rem'}}
@@ -37,7 +36,6 @@ export default class BlogIndexPage extends React.Component {
                       component="h5"
                       variant="h5"
                       align="center"
-                      color="#000"
                       fontWeight={"normal"}
                       gutterBottom
                       sx={{ marginBottom: '4rem'}}

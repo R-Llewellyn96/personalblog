@@ -36,7 +36,6 @@ export default function AboutMeSection() {
                                 component="h1"
                                 variant="h1"
                                 align="left"
-                                color="#000"
                                 fontWeight={"bold"}
                                 gutterBottom
                                 sx={{fontSize: 72}}

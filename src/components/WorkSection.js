@@ -55,11 +55,11 @@ const WorkSection = () => {
     }
 
     const typoSubtitle = {
-        color: '#000',  fontSize: 16, marginTop: '4rem'
+        fontSize: 16,
+        marginTop: '4rem'
     }
 
     const typoText = {
-        color: '#000',
         fontSize: 20
     }
 
@@ -103,7 +103,6 @@ const WorkSection = () => {
                                 component="h1"
                                 variant="h1"
                                 align="left"
-                                color="#000"
                                 fontWeight={"bold"}
                                 gutterBottom
                                 sx={{fontSize: 72}}

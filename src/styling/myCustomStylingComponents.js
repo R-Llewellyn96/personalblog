@@ -10,11 +10,11 @@ const boxStyling = {
 }
 
 const typoSubtitle = {
-    color: '#000',  fontSize: 16, marginTop: '4rem'
+    color: '#333',  fontSize: 16, marginTop: '4rem'
 }
 
 const typoText = {
-    color: '#000',
+    color: '#333',
     fontSize: 20
 }
 

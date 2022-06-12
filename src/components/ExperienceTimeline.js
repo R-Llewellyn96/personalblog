@@ -22,7 +22,6 @@ export default function ExperienceTimeline() {
                     sx={{ m: 'auto 0' }}
                     align="right"
                     variant="body1"
-                    color="text.secondary"
                 >
                     Future
                 </TimelineOppositeContent>
@@ -48,7 +47,6 @@ export default function ExperienceTimeline() {
                 <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}
                     variant="body1"
-                    color="text.secondary"
                 >
                     2021 - present
                 </TimelineOppositeContent>
@@ -75,7 +73,6 @@ export default function ExperienceTimeline() {
                 <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}
                     variant="body1"
-                    color="text.secondary"
                 >
                     2019 - 2020
                 </TimelineOppositeContent>
@@ -101,7 +98,6 @@ export default function ExperienceTimeline() {
                 <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}
                     variant="body1"
-                    color="text.secondary"
                 >
                     2014 - 2019
                 </TimelineOppositeContent>

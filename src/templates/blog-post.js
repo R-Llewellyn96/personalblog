@@ -6,9 +6,8 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import {Box, Container, Typography} from "@mui/material";
-import {boxStyling, nameStyle} from "../styling/myCustomStylingComponents";
+import {boxStyling, nameStyle, chipStylingGreen} from "../styling/myCustomStylingComponents";
 import Chip from "@mui/material/Chip";
-import theme from "../theme";
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
@@ -53,16 +52,7 @@ export const BlogPostTemplate = ({
                                                   <Link to={`/tags/${kebabCase(tag)}/`}>
                                                       <Chip
                                                           label={tag}
-                                                          sx={{
-                                                              marginBottom: '0.25rem',
-                                                              color: '#fff',
-                                                              backgroundColor: theme.palette.primary.main,
-                                                              fontSize: '80%',
-                                                              '&:hover': {
-                                                                  color: '#fff',
-                                                                  backgroundColor: theme.palette.primary.dark,
-                                                              }
-                                                          }}
+                                                          sx={{...chipStylingGreen}}
                                                       />
                                                   </Link>
                                               </li>

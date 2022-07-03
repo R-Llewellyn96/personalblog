@@ -5,7 +5,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import {Box, Container, ListItem, Typography} from "@mui/material";
 import Chip from "@mui/material/Chip";
-import {buttonInBox} from "../../styling/myCustomStylingComponents";
+import {chipStylingGreen} from "../../styling/myCustomStylingComponents";
 
 const boxStyling = {
   backgroundColor: '#e8f2ed',
@@ -47,7 +47,7 @@ const TagsPage = ({
                         <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
                           <Chip
                               label={`${tag.fieldValue} (${tag.totalCount})`}
-                              sx={{...buttonInBox, marginTop: '0rem', marginBottom: '0rem',}}
+                              sx={{...chipStylingGreen}}
                           />
                         </Link>
                       </ListItem>

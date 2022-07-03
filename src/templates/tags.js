@@ -2,12 +2,13 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
-import { buttonInBox} from "../styling/myCustomStylingComponents";
 import {Box, Button, Container, ListItem, Typography} from "@mui/material";
 import Chip from "@mui/material/Chip";
+import {chipStylingGreen} from "../styling/myCustomStylingComponents";
 
 class TagRoute extends React.Component {
   render() {
+
     const posts = this.props.data.allMarkdownRemark.edges;
     const postLinks = posts.map((post) => (
 
@@ -15,7 +16,7 @@ class TagRoute extends React.Component {
           <Link to={post.node.fields.slug}>
             <Chip
                 label={post.node.frontmatter.title}
-                sx={{...buttonInBox, marginTop: '0.25rem', marginBottom: '0.25rem',}}
+                sx={{...chipStylingGreen}}
             />
           </Link>
         </ListItem>
@@ -57,7 +58,7 @@ class TagRoute extends React.Component {
                     <ul className="taglist">{postLinks}</ul>
 
                     <Link to="/tags/">
-                      <Button variant="contained" size={"large"} sx={{...buttonInBox}}
+                      <Button variant="contained" size={"large"} sx={{...chipStylingGreen, marginTop: '0.5rem', borderRadius: '25px'}}
                       >BROWSE ALL TAGS</Button>
                     </Link>
 

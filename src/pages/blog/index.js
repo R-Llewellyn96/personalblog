@@ -4,7 +4,7 @@ import BlogRoll from "../../components/BlogRoll";
 import {Box, Container, Typography} from "@mui/material";
 
 const boxStyling = {
-    backgroundColor: '#d7eed2',
+    backgroundColor: '#FAF9F6',
     paddingTop: '4rem',
     paddingBottom: '4rem',
     paddingLeft: 0,

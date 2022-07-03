@@ -2,14 +2,13 @@ import {Box, Button, Container, Grid, Typography} from "@mui/material";
 import ChipsArray from "./ChipsArray";
 import React from "react";
 import { SiApachemaven } from "@react-icons/all-files/si/SiApachemaven";
-import theme from "../theme";
 import ExperienceTimeline from "./ExperienceTimeline";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faJava} from "@fortawesome/free-brands-svg-icons/faJava";
 import {faLeaf} from "@fortawesome/free-solid-svg-icons/faLeaf";
 import {faPython} from "@fortawesome/free-brands-svg-icons/faPython";
 import {faDatabase} from "@fortawesome/free-solid-svg-icons/faDatabase";
-import {textAreaStyle} from "../styling/myCustomStylingComponents";
+import {buttonInBox, textAreaStyle} from "../styling/myCustomStylingComponents";
 
 
 const chipDataExperience = [
@@ -61,26 +60,6 @@ const WorkSection = () => {
 
     const typoText = {
         fontSize: 20
-    }
-
-    const buttonInBox = {
-        borderRadius: 28,
-        textTransform: 'none',
-        fontWeight: 'normal',
-        fontSize: 16,
-        padding: '-10px -5px -5px -10px',
-        color: '#fff',
-        backgroundColor: '#073042',
-        borderWidth: '2px',
-        marginTop: '2rem',
-        marginBottom: '8rem',
-        "&:hover": {
-            color: theme.palette.secondary.main,
-            backgroundColor: '#073042',
-            borderColor: '#073042',
-            borderWidth: '2px',
-            padding: '-10px -5px -5px -10px',
-        },
     }
 
     return (

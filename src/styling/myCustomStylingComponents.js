@@ -1,3 +1,5 @@
+import theme from "../theme";
+
 const boxStyling = {
     backgroundColor: '#FAF9F6',
     paddingLeft: 0,
@@ -18,6 +20,17 @@ const typoText = {
     fontSize: 20
 }
 
+const chipStylingGreen = {
+    marginBottom: '0.25rem',
+    color: '#fff',
+    backgroundColor: theme.palette.secondary.main,
+    fontSize: '80%',
+    '&:hover': {
+        color: '#fff',
+        backgroundColor: theme.palette.secondary.dark,
+    }
+}
+
 const buttonInBox = {
     borderRadius: 28,
     textTransform: 'none',
@@ -25,14 +38,14 @@ const buttonInBox = {
     fontSize: 16,
     padding: '-10px -5px -5px -10px',
     color: '#fff',
-    backgroundColor: '#073042',
+    backgroundColor: theme.palette.secondary.main,
     borderWidth: '2px',
     marginTop: '2rem',
     marginBottom: '8rem',
     "&:hover": {
-        color: '#3ddc84',
-        backgroundColor: '#073042',
-        borderColor: '#073042',
+        color: '#fff',
+        backgroundColor: theme.palette.secondary.dark,
+        borderColor: theme.palette.secondary.dark,
         borderWidth: '2px',
         padding: '-10px -5px -5px -10px',
     },
@@ -146,5 +159,6 @@ export {
     typography,
     buttonMaterial,
     cardMaterial,
-    leftSideUserCardGridStyling
+    leftSideUserCardGridStyling,
+    chipStylingGreen
 }

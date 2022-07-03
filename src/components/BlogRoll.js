@@ -26,7 +26,9 @@ class BlogRollTemplate extends React.Component {
                           height: '100%',
                           display: 'flex',
                           flexDirection: 'column',
-                          borderRadius: '2%'
+                          borderRadius: '2%',
+                          borderWidth: '1.25px',
+                          borderColor: 'lightgrey'
                         }}
                     >
                       <CardActionArea>

@@ -9,7 +9,7 @@ import {
     styled,
     Typography
 } from "@mui/material";
-import {faChrome, faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {faChrome, faGithub, faLinkedin, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
     cardStyle,
@@ -30,7 +30,7 @@ const defaultUser = {
     company: "IQBlade Ltd",
     avatar_url: {user_img},
     location: "Liverpool, United Kingdom",
-    bio: "Data Analyst based in Liverpool, UK. Specialising in Java development with Spring and Data Analytics in Python, with some interest in React on the front-end.",
+    bio: "Software Engineer based in Liverpool, UK. Specialising in Back-End development with Java and Spring, Front-End development with JavaScript, TypeScript and React, as well as Data Analytics with Python.",
     blog: "https://www.rllewellyn96.dev",
     login: "R-Llewellyn96",
     html_url: "https://github.com/R-Llewellyn96",
@@ -39,7 +39,8 @@ const defaultUser = {
     public_repos: 21,
     public_gists: 0,
     hireable: true,
-    twitter_username: "RLlewellyn96"
+    twitter_username: "RLlewellyn96",
+    linkedin_username: "RLlewellyn96"
 }
 
 const centerCard = {
@@ -70,7 +71,8 @@ export default function UserInfoCard() {
         following,
         public_repos,
         public_gists,
-        twitter_username
+        twitter_username,
+        linkedin_username
     } = defaultUser;
 
     const personalSite = defaultUser.blog.replace('https://www.','');
@@ -187,6 +189,12 @@ export default function UserInfoCard() {
                             <a href={'https://twitter.com/' + twitter_username} style={{...cardLinkStyle}}>
                                 <FontAwesomeIcon icon={faTwitter} size="lg" style={{...linkStyling}}/>
                                 @{twitter_username}</a>
+                        </Typography>
+
+                        <Typography gutterBottom variant="subtitle1" sx={{...typographyContent}}  component="div" align="left">
+                            <a href={'https://www.linkedin.com/in/' + linkedin_username} style={{...cardLinkStyle}}>
+                                <FontAwesomeIcon icon={faLinkedin} size="lg" style={{...linkStyling}}/>
+                                {linkedin_username}</a>
                         </Typography>
                     </Fragment>
 

@@ -6,12 +6,11 @@ import {SiMaterialUi} from "@react-icons/all-files/si/SiMaterialUi";
 import {SiPostgresql} from "@react-icons/all-files/si/SiPostgresql";
 import React from "react";
 import Repos from "../Repos/Repos";
-import theme from "../theme";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faJava} from "@fortawesome/free-brands-svg-icons/faJava";
 import {faLeaf} from "@fortawesome/free-solid-svg-icons/faLeaf";
 import {faReact} from "@fortawesome/free-brands-svg-icons/faReact";
-import {textAreaStyle} from "../styling/myCustomStylingComponents";
+import {buttonInBox, textAreaStyle} from "../styling/myCustomStylingComponents";
 
 const MyOwnTimeSection = () => {
 
@@ -33,26 +32,6 @@ const MyOwnTimeSection = () => {
 
     const typoText = {
         fontSize: 20
-    }
-
-    const buttonInBox = {
-        borderRadius: 28,
-        textTransform: 'none',
-        fontWeight: 'normal',
-        fontSize: 16,
-        padding: '-10px -5px -5px -10px',
-        color: '#fff',
-        backgroundColor: '#073042',
-        borderWidth: '2px',
-        marginTop: '2rem',
-        marginBottom: '8rem',
-        "&:hover": {
-            color: theme.palette.secondary.main,
-            backgroundColor: '#073042',
-            borderColor: '#073042',
-            borderWidth: '2px',
-            padding: '-10px -5px -5px -10px',
-        },
     }
 
     const chipDataMyTime = [

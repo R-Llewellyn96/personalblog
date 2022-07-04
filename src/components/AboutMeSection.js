@@ -47,7 +47,7 @@ export default function AboutMeSection() {
                                 <br />
                                 I specialise in Full-Stack development using Java with Spring on the Back-End and JavaScript with ReactJS on the Front-End, as well as Data Analytics using Python and I also pursue an interest in Mobile Development with Kotlin on Android in my own time.
                                 <br />
-                                I'm always learning new technologies and building random software projects (useful or useless) for fun.<br />
+                                I'm always learning new technologies and building new software projects both for fun and to challenge myself.<br />
                                 <br />
                                 Shortly after graduating from the University of Liverpool,
                                 I joined IQBlade Ltd (Subsidiary of TD Synnex) as a Data Analyst and Software Engineer.<br />

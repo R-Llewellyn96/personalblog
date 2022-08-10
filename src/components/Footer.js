@@ -10,6 +10,10 @@ import Copyright from "./Copyright";
 
 
 const socialMediaIconStyling = {
+  paddingLeft: 0,
+  paddingRight: 0,
+  marginLeft: 0,
+  marginRight: 0,
   color: '#333',
   "&:hover": {
     color: theme.palette.secondary.main,
@@ -28,11 +32,19 @@ const boxStyling = {
 }
 
 const containerStyling = {
+  paddingLeft: 0,
+  paddingRight: 0,
+  marginLeft: 0,
+  marginRight: 0,
   paddingTop: '1rem',
   paddingBottom: '1rem'
 }
 
 const iconLinkStyling = {
+  paddingLeft: 0,
+  paddingRight: 0,
+  marginLeft: 0,
+  marginRight: 0,
   marginTop: '0rem'
 }
 

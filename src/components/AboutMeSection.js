@@ -15,7 +15,7 @@ export default function AboutMeSection() {
     return (
 
         <Box sx={{...boxStyling}}>
-            <Container sx={{marginTop: '3.5rem'}}>
+            <Container>
                 <Grid container spacing={0}>
 
                     {/*left side item*/}

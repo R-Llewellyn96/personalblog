@@ -1,6 +1,6 @@
 import React from "react"
 import {Link} from "gatsby";
-import {AppBar, Box, Button, Toolbar, Typography} from "@mui/material";
+import {AppBar, Button, Toolbar, Typography} from "@mui/material";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCode
@@ -9,11 +9,6 @@ import {
 const upperTypography = {
   marginLeft: '0.5rem',
   marginTop: '0.25rem',
-  flexGrow: '1'
-}
-
-const boxStyle = {
-  color: '#333',
   flexGrow: '1'
 }
 
@@ -26,8 +21,7 @@ export default function Navbar() {
 
   const title = "Ryan's Profile"
   return (
-      <Box sx={{...boxStyle}}>
-        <AppBar elevation={1} sx={{position: 'sticky', top: 0, width: '100%'}}>
+        <AppBar position='sticky' elevation={1} sx={{top: 0, width: '100%'}}>
           <Toolbar sx={{...navbarStyle}}>
             <FontAwesomeIcon icon={faCode} size="lg" style={{
               color: '#3ddc84',
@@ -46,6 +40,5 @@ export default function Navbar() {
             </div>
           </Toolbar>
         </AppBar>
-      </Box>
   );
 }

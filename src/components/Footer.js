@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Container, Divider, Grid, IconButton, Typography} from "@mui/material";
+import {Container, Divider, Grid, IconButton, Typography} from "@mui/material";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
@@ -19,16 +19,6 @@ const socialMediaIconStyling = {
     color: theme.palette.secondary.main,
     backgroundColor: 'transparent',
   },
-}
-
-const boxStyling = {
-  backgroundColor: '#f8f9fa',
-  paddingLeft: 0,
-  paddingRight: 0,
-  marginLeft: 0,
-  marginRight: 0,
-  maxWidth: '100%',
-  height: '100%'
 }
 
 const containerStyling = {
@@ -51,8 +41,7 @@ const iconLinkStyling = {
 export default function Footer() {
 
   return (
-      <Box sx={{...boxStyling}}>
-        <Container sx={{...containerStyling}}>
+        <Container maxWidth='false' sx={{...containerStyling}}>
 
           <Grid container spacing={1}>
             <Grid item xs={12} sm={12} md={6}>
@@ -119,6 +108,5 @@ export default function Footer() {
           <Copyright />
 
         </Container>
-      </Box>
   )
 }

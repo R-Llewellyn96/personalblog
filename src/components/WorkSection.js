@@ -89,11 +89,12 @@ const WorkSection = () => {
                                 What I do<br/>9 to 5.
                             </Typography>
                             <Typography component={'div'} variant="body1" align="left" sx={{...typoText}} paragraph>
-                                Data Analytics Department
+                                Software Engineering Department
                                 <ul className="list" style={{ marginLeft:'1rem', listStyle: 'disc outside'}}>
-                                    <li>Creation of Backend-Services and REST APIs using Spring Boot with Java and Flask with Python.</li>
-                                    <li>Interfacing with a MySQL database and Snowflake Data Warehouse</li>
-                                    <li>Web Scraping with Python, using Requests, Selenium, BeautifulSoup and ActionChains.</li>
+                                    <li>Taking ownership of an entire project to be created for a client, implementing Back-end, Front-end and Database schema, based on a client's requirements</li>
+                                    <li>Creation of Back-end Services and REST APIs using Spring Boot with Java.</li>
+                                    <li>Creation of Front-end Services using React with JavaScript and TypeScript, as well as Lit when using the Hilla Framework.</li>
+                                    <li>Interfacing with a MySQL database, ElasticSearch (NoSQL) and Snowflake Data Warehouse</li>
                                 </ul>
                             </Typography>
 

@@ -48,7 +48,33 @@ export default function ExperienceTimeline() {
                     sx={{ m: 'auto 0' }}
                     variant="body1"
                 >
-                    2021 - present
+                    2022 - present
+                </TimelineOppositeContent>
+                {/*main content*/}
+                <TimelineSeparator>
+                    <TimelineConnector />
+                    <TimelineDot color="secondary">
+                        {/*<LaptopMacIcon />*/}
+                        <FontAwesomeIcon icon={faLaptopCode} />
+                    </TimelineDot>
+                    <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent sx={{ py: '12px', px: 2 }}>
+                    <Typography variant="h6" component="span">
+                        Software Engineer
+                    </Typography>
+                    <Typography>IQBlade Ltd</Typography>
+                </TimelineContent>
+            </TimelineItem>
+
+            {/*item two*/}
+            <TimelineItem>
+                {/*opposite side content*/}
+                <TimelineOppositeContent
+                    sx={{ m: 'auto 0' }}
+                    variant="body1"
+                >
+                    2021 - 2022
                 </TimelineOppositeContent>
                 {/*main content*/}
                 <TimelineSeparator>

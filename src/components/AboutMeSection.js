@@ -49,15 +49,24 @@ export default function AboutMeSection() {
                                 <br /><br />
                                 I'm always learning new technologies and building new software projects both for fun and to challenge myself.
                                 <br /><br />
-                                After graduating from the University of Liverpool,
-                                I worked initially as a Back-End Developer using Java for Spring-Boot services and Python for Web Scraping, however I quickly rose to the role of Full Stack Software Engineer.<br /><br />
-                                In my daily work, in Full-Stack development I build and improve Back-End Microservices in Java 11+, using Spring Boot, along with Front-End development using React with TypeScript,
-                                interacting with a MySQL database and ElasticSearch (NoSQL).<br /><br />
-                                In my Data Analytics work I created Data Scrapers in Python, using a mix of Selenium, BeautifulSoup 4, Requests and Pandas,
-                                as well as performing Data Cleaning.<br /><br />
-
+                                I am a Full-Stack Software Engineer with over 3 years of software development
+                                experience in a commercial setting, as a Software Engineer my primary focus has
+                                been on Java 11 & 17 based Spring Boot Backend Microservices for a large-scale
+                                data platform, along with a React Typescript based Frontend.
+                                <br/><br/>
+                                My typical work consists of building out new functionality on a Spring Boot 2
+                                based corporate data platform backend, from creating and securing new REST
+                                endpoints, implementing new business logic on the service layer, creating
+                                repository connections to a selection of MySQL Databases, MongoDB and Elasticsearch Indices
+                                through Spring Data JPA, Entity to DTO data mapping, code performance analysis
+                                and optimisation, Error handling along with both Unit and Integration testing.
+                                Building out a Frontend with React using Axios to call new endpoints, aside from
+                                working on the existing platform I also implement greenfield Full Stack
+                                applications for both internal use and international corporate partners.
+                                <br /><br />
                                 My own Software Engineering interests are centered around Full-Stack Engineering, Cryptography (within the Java JCA),
-                                Parallel Computing and Functional Programming. <br /><br />
+                                Parallel Computing and Functional Programming.
+                                <br /><br />
                                 Some examples of which can be found in my personal projects below,
                                 Keep on reading to find out more!
                             </Typography>

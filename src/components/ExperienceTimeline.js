@@ -20,7 +20,6 @@ export default function ExperienceTimeline() {
                 {/*opposite side content*/}
                 <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}
-                    align="right"
                     variant="body1"
                 >
                     Future
@@ -28,7 +27,7 @@ export default function ExperienceTimeline() {
                 {/*main content*/}
                 <TimelineSeparator>
                     <TimelineConnector />
-                    <TimelineDot>
+                    <TimelineDot color="secondary">
                         <FontAwesomeIcon icon={faCode} />
                     </TimelineDot>
                     <TimelineConnector />
@@ -48,7 +47,33 @@ export default function ExperienceTimeline() {
                     sx={{ m: 'auto 0' }}
                     variant="body1"
                 >
-                    2022 - present
+                    2023 - present
+                </TimelineOppositeContent>
+                {/*main content*/}
+                <TimelineSeparator>
+                    <TimelineConnector />
+                    <TimelineDot color="secondary" variant="outlined">
+                        {/*<LaptopMacIcon />*/}
+                        <FontAwesomeIcon icon={faLaptopCode} />
+                    </TimelineDot>
+                    <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent sx={{ py: '12px', px: 2 }}>
+                    <Typography variant="h6" component="span">
+                        Full-Stack Developer
+                    </Typography>
+                    <Typography>Mixam Ltd</Typography>
+                </TimelineContent>
+            </TimelineItem>
+
+            {/*item three*/}
+            <TimelineItem>
+                {/*opposite side content*/}
+                <TimelineOppositeContent
+                    sx={{ m: 'auto 0' }}
+                    variant="body1"
+                >
+                    2022 - 2023
                 </TimelineOppositeContent>
                 {/*main content*/}
                 <TimelineSeparator>
@@ -67,7 +92,7 @@ export default function ExperienceTimeline() {
                 </TimelineContent>
             </TimelineItem>
 
-            {/*item two*/}
+            {/*item four*/}
             <TimelineItem>
                 {/*opposite side content*/}
                 <TimelineOppositeContent
@@ -93,7 +118,7 @@ export default function ExperienceTimeline() {
                 </TimelineContent>
             </TimelineItem>
 
-            {/*item three*/}
+            {/*item five*/}
             <TimelineItem>
                 {/*opposite side content*/}
                 <TimelineOppositeContent
@@ -118,7 +143,7 @@ export default function ExperienceTimeline() {
                 </TimelineContent>
             </TimelineItem>
 
-            {/*item four*/}
+            {/*item six*/}
             <TimelineItem>
                 {/*opposite side content*/}
                 <TimelineOppositeContent

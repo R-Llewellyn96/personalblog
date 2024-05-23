@@ -51,17 +51,17 @@ export default function AboutMeSection() {
                                 <br /><br />
                                 I am a Full-Stack Software Engineer with over 3 years of software development
                                 experience in a commercial setting, as a Software Engineer my primary focus has
-                                been on Java 11 & 17 based Spring Boot Backend Microservices for a large-scale
+                                been on Java 11 & 17 based Spring Boot Back-End Microservices for a large-scale
                                 data platform, along with a React Typescript based Frontend.
                                 <br/><br/>
                                 My typical work consists of building out new functionality on a Spring Boot 2
-                                based corporate data platform backend, from creating and securing new REST
+                                based corporate data platform Back-End, from creating and securing new REST
                                 endpoints, implementing new business logic on the service layer, creating
                                 repository connections to a selection of MySQL Databases, MongoDB and Elasticsearch Indices
                                 through Spring Data JPA, Entity to DTO data mapping, code performance analysis
                                 and optimisation, Error handling along with both Unit and Integration testing.
-                                Building out a Frontend with React using Axios to call new endpoints, aside from
-                                working on the existing platform I also implement greenfield Full Stack
+                                Building out a Front-End with React using Axios to call new endpoints, aside from
+                                working on the existing platform I also implement greenfield Full-Stack
                                 applications for both internal use and international corporate partners.
                                 <br /><br />
                                 My own Software Engineering interests are centered around Full-Stack Engineering, Cryptography (within the Java JCA),

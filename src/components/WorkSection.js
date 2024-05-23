@@ -92,9 +92,9 @@ const WorkSection = () => {
                                 Software Engineering Department
                                 <ul className="list" style={{ marginLeft:'1rem', listStyle: 'disc outside'}}>
                                     <li>Taking ownership of an entire project to be created for a client, implementing Back-end, Front-end and Database schema, based on a client's requirements</li>
-                                    <li>Creation of Back-end Services and REST APIs using Spring Boot with Java.</li>
-                                    <li>Creation of Front-end Services using React with JavaScript and TypeScript, as well as Lit when using the Hilla Framework.</li>
-                                    <li>Interfacing with a MySQL database, ElasticSearch (NoSQL) and Snowflake Data Warehouse</li>
+                                    <li>Creation of Back-end Services and REST APIs using Spring Boot with Java 11 and Java 17.</li>
+                                    <li>Creation of Front-end Services using React with JavaScript and TypeScript, as well as Thymeleaf and Lit when using the Hilla Framework, along with Bootstrap and Material UI</li>
+                                    <li>Interfacing with a MySQL database, MongoDB, ElasticSearch (NoSQL) and Snowflake Data Warehouse</li>
                                 </ul>
                             </Typography>
 

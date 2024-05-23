@@ -43,15 +43,15 @@ export default function AboutMeSection() {
                                 Who I am.
                             </Typography>
                             <Typography variant="body1" align="left" sx={{ ...typoText, marginBottom: '4rem' }} paragraph>
-                                Hi! I am Ryan, a Software Engineer from Liverpool.
+                                Hi! I am Ryan, a Software Engineer based in North London, but originally from Liverpool.
                                 <br />
-                                I specialise in Full-Stack development using Java with Spring on the Back-End and JavaScript with ReactJS on the Front-End, as well as Data Analytics using Python, in my own time I'm also interested in Mobile Development with Kotlin on Android.
+                                I specialise in Full-Stack development using Java with Spring-Boot on the Back-End and JavaScript / TypeScript with React on the Front-End, as well as Data Analytics using Python, in my own time I'm also interested in Mobile Development with React Native.
                                 <br /><br />
                                 I'm always learning new technologies and building new software projects both for fun and to challenge myself.
                                 <br /><br />
-                                Shortly after graduating from the University of Liverpool,
-                                I joined IQBlade Ltd (a subsidiary of TD Synnex) initially as a Data Analyst however I was quickly promoted to the role of Software Engineer.<br /><br />
-                                In my daily work, in Full-Stack development I build Back-End Microservices in Java, using Spring Boot, along with Front-End development using ReactJS with TypeScript,
+                                After graduating from the University of Liverpool,
+                                I worked initially as a Back-End Developer using Java for Spring-Boot services and Python for Web Scraping, however I quickly rose to the role of Full Stack Software Engineer.<br /><br />
+                                In my daily work, in Full-Stack development I build and improve Back-End Microservices in Java 11+, using Spring Boot, along with Front-End development using React with TypeScript,
                                 interacting with a MySQL database and ElasticSearch (NoSQL).<br /><br />
                                 In my Data Analytics work I created Data Scrapers in Python, using a mix of Selenium, BeautifulSoup 4, Requests and Pandas,
                                 as well as performing Data Cleaning.<br /><br />

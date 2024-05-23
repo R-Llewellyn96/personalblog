@@ -27,10 +27,10 @@ import user_img from "../img/user_image.webp"
 
 const defaultUser = {
     name: "Ryan Llewellyn",
-    company: "IQBlade Ltd",
+    company: "Mixam Ltd",
     avatar_url: {user_img},
-    location: "Liverpool, United Kingdom",
-    bio: "Software Engineer based in Liverpool, UK. Specialising in Back-End development with Java and Spring, Front-End development with JavaScript, TypeScript and React, as well as Data Analytics with Python.",
+    location: "London, United Kingdom",
+    bio: "Software Engineer based in London, UK. Specialising in Back-End development with Java and Spring, Front-End development with JavaScript, TypeScript and React, as well as Data Analytics with Python.",
     blog: "https://www.rllewellyn96.dev",
     login: "R-Llewellyn96",
     html_url: "https://github.com/R-Llewellyn96",
